@@ -13,7 +13,7 @@ func Sieve(limit int) map[int]int {
 	}
 
 	// Sieve of Eratosthenes
-	for i2 := 5; i2*i2 <= limit; i2 = i2 + 2 {
+	for i2 := 3; i2*i2 <= limit; i2 = i2 + 2 {
 		for i3 := i2; i2*i3 <= limit; i3++ {
 			if val, ok := primes[i2*i3]; ok {
 				log.Println("Deleting", val)
