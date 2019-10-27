@@ -4,7 +4,7 @@ import "log"
 
 // Sieve of Eratosthenes function. Returns a map of prime numbers. Point out maximum number in the returning map.
 func Sieve(limit int) map[int]int {
-	primes := make(map[int]int, limit)
+	primes := make(map[int]int, limit>>1)
 
 	// Forming an array of numbers where the maximum number = limit
 	primes[2] = 2
